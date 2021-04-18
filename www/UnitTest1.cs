@@ -20,6 +20,7 @@ namespace www
         }
 
         [TestMethod]
+        [Description("This test checks login with valid username and password")]
         public void CheckLoginTest()
         {
             LoginPage.Open();
@@ -28,5 +29,8 @@ namespace www
             LoginPage.SignIn.Click();
             Assert.IsNotNull(LoginPage.ProfileImage, "The user is not authorized: ");
         }
+
+        //ToDo: Create the test that checks login with invalid password
+
     }
 }
