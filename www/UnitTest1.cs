@@ -24,8 +24,8 @@ namespace www
         public void CheckLoginTest()
         {
             LoginPage.Open();
-            LoginPage.EmailOrPhone.SendKeys("vikentev@hotmail.com"); // enter valid email as a parameter
-            LoginPage.Password.SendKeys("v20072007"); // enter valid password as a parameter
+            LoginPage.EmailOrPhone.SendKeys(""); // enter valid email as a parameter
+            LoginPage.Password.SendKeys(""); // enter valid password as a parameter
             LoginPage.SignIn.Click();
             Assert.IsNotNull(LoginPage.ProfileImage, "The user is not authorized: ");
         }
